@@ -65,9 +65,6 @@ cmake -DTHREADING=TBB                   \
     -DPYTHON_EXECUTABLE=`which python3` \
 	..
 
-TEMPCV_DIR=${OPENVINO_DIR}/temp/opencv_4*
-OPENCV_DIRS=$(ls -d -1 ${TEMPCV_DIR} )
-OPENCV_LIBRARIES=${OPENCV_DIRS[0]}/opencv/lib
 export LD_LIBRARY_PATH=${LD_LIBRARY_PATH}:${OPENCV_LIBRARIES}
 
 make -j$(nproc)
@@ -154,7 +151,6 @@ mkdir build && cd build
 
 BOOST_LIBRARIES=${BOOST_DIR}/boost_1_72_0/stage/lib
 cmake -DInferenceEngine_DIR=${OPENVINO_DIR}/build/ \
-		-DOpenCV_DIR=${OPENCV_DIRS[0]}/opencv/cmake/ \
 		-DLOADGEN_DIR=${MLPERF_INFERENCE_REPO}/loadgen \
 		-DBOOST_INCLUDE_DIRS=${BOOST_DIR}/boost_1_72_0 \
 		-DBOOST_FILESYSTEM_LIB=${BOOST_LIBRARIES}/libboost_filesystem.so \

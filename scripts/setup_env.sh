@@ -1,13 +1,11 @@
 #!/bin/bash
 # Edit path as appropriate
-BUILD_DIRECTORY=$(dirname $(dirname $(dirname $(realpath "$BASH_SOURCE"))))/mlperf
+BUILD_DIRECTORY=$(dirname $(dirname $(dirname $(realpath "$BASH_SOURCE"))))/MLPerf
 
 # Other relative paths used during build
 MLPERF_DIR=${BUILD_DIRECTORY}/MLPerf-Intel-openvino
 DEPS_DIR=${MLPERF_DIR}/dependencies
 OPENVINO_DIR=${DEPS_DIR}/openvino
-TEMPCV_DIR=${OPENVINO_DIR}/temp/opencv_4*
-OPENCV_DIRS=$(ls -d -1 ${TEMPCV_DIR} )
 
 # Libraries
 OPENVINO_LIBRARIES=${OPENVINO_DIR}/bin/intel64/Release
