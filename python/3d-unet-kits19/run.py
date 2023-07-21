@@ -3,7 +3,6 @@
 
 import mlperf_loadgen as lg
 from pathlib import Path
-import subprocess
 import argparse
 import os
 import sys
