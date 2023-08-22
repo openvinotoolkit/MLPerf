@@ -1,0 +1,44 @@
+
+MLPerf-Intel-openvino/
+src/build/
+src/Release/
+
+#Models
+models/bert/model
+*.xml
+*.bin
+*.mapping
+*.onnx
+*.pt
+*.pth
+*.zip
+
+# Imagenet
+datasets/imagenet/ILSVRC2012_img_val*
+
+# Kits2019
+datasets/kits/kits19
+datasets/kits/preprocessed_data/
+datasets/kits/postprocessed_data/
+python/3d-unet-kits19/meta/
+
+# SquAD
+datasets/squad/samples_cache
+datasets/squad/dev-v1.1.json
+datasets/squad/vocab.txt
+
+# OpenImages
+datasets/openimages/openimages_v6/
+
+# Result files
+eval_features.pickle
+openimages-results.json
+bert_predictions.json
+mlperf_log_accuracy.json
+mlperf_log_detail.txt
+mlperf_log_summary.txt
+mlperf_log_trace.json
+results
+
+# Python
+*.pyc
