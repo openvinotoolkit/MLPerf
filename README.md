@@ -87,4 +87,4 @@ Use the following to optimize performance on CPX/ICX systems.  These BKCs are pr
     ```
     ./scripts/run_all.sh
     ```
-    ***NOTE: These scripts are provided as example. For reporting MLPerf results dedicated scripts should be provided for each model with suitable parameters.***
+    ***NOTE: This product is not for production use and scripts are provided as example. For reporting MLPerf results dedicated scripts should be provided for each model with suitable parameters.***
